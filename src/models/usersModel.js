@@ -43,3 +43,12 @@ module.exports.storeRefreshToken = (data, callback) => {
         pool.query(SQLSTATMENT, VALUES, callback);            
 }
 
+module.exports.selectById = (data, callback) => {
+        const SQLSTATMENT = `
+        SELECT user_id, username, email, amount_donated FROM user
+        WHERE user_id = ?;
+        `;
+        const VALUES = [data.user_id];
+            
+        pool.query(SQLSTATMENT, VALUES, callback);
+}

@@ -184,6 +184,7 @@ module.exports.register = (req, res, next) => { // create new user
             res.status(500).json(error);
         } 
         else {
+            res.locals.userId = results.insertId
             res.locals.username = data.username // for the registration message
             res.locals.register = data.register
             next()
