@@ -1,0 +1,29 @@
+{
+  "name": "bbcs-dec-hackathon-grp27",
+  "version": "1.0.0",
+  "description": "Repository for BBCS hackathon",
+  "main": "index.js",
+  "scripts": {
+    "init_tables": "node src/configs/initTables.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Infvrno/BBCS-Dec-Hackathon-Grp27.git"
+  },
+  "author": "Lee Jia Hui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Infvrno/BBCS-Dec-Hackathon-Grp27/issues"
+  },
+  "homepage": "https://github.com/Infvrno/BBCS-Dec-Hackathon-Grp27#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.5",
+    "nodemon": "^3.1.9"
+  }
+}
