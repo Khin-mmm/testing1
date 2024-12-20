@@ -6,11 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Generositree</title>
 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-    crossorigin="anonymous"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link
@@ -22,209 +19,138 @@
 </head>
 
 <body>
-  <div id="navbar">
-    <!--- navigation bar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/santa-claus.png" 
-              class="logo img-fluid"/>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- these are the links that will be displayed on the right hand side of the navbar -->
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a id='organisations-link' class="nav-link" href="organisations.html">Donate</a>
-              </li>
-              <li class="nav-item">
-                <a id='tree-link' class="nav-link" href="tree.html">Tree</a>
-              </li>
-            </ul>
+  <div id="navbar"></div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="tree-image"></div>
+        <h1><span style="font-weight: normal;">Bring life to the Tree</span><br> <span style="font-weight: bold;">Joy to
+            the Community</span></h1>
+        <p>Join us this festive season to <strong>spread joy and kindness</strong>.<br>Your donation can
+          <strong>light up lives</strong> and make a <strong>difference</strong> in our community
+        </p>
+        <button class="cta-button" onclick="window.location.href='organisations.html'">Donate now</button>
+      </div>
+    </section>
+    <section class="how-it-works">
+      <h4><span style="font-weight: bold;">Generositree</span> is fun, easy, and trusted</h4>
+      <p>You can discover trusted organizations and make giving simple, all in one place</p>
+
+      <div class="flex-list">
+        <div class="list-item">
+          <div class="icon"><img src="./images/one.png" alt="one" width="50px"></div>
+          <h5>Explore our partnered Organizations</h5>
+          <p>Browse list of Non-profits, Charities, and NGOs in Singapore.</p>
+        </div>
+        <div class="list-item">
+          <div class="icon"><img src="./images/two.png" alt="two" width="50px"></div>
+          <h5>Choose a Cause</h5>
+          <p>Select an organization you would like to support.</p>
+        </div>
+        <div class="list-item">
+          <div class="icon"><img src="./images/three.png" alt="three" width="50px"></div>
+          <h5>Donate Easily</h5>
+          <p>Enter your donation amount and payment details securely.</p>
+        </div>
+        <div class="list-item">
+          <div class="icon"><img src="./images/four.png" alt="four" width="50px"></div>
+          <h5>Make a Difference</h5>
+          <p>Watch your contributions grow the Christmas tree.</p>
+        </div>
+      </div>
+    </section>
+    <section class="organizations-section">
+      <div class="container">
+        <div class="organizations-row">
+          <div class="description">
+            <p>
+              "There are countless changemakers in Singapore—groups dedicated to creating a better future for
+              our communities.
+              Our team aims to build a bridge between individuals and these impactful initiatives, enabling
+              everyone to contribute
+              to society in a more meaningful and efficient way. Together, we make generosity simple,
+              effective, and inspiring."
+            </p>
+            <button onclick="window.location.href='organisations.html'">Explore all organizations</button>
           </div>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- ms-auto: margin-left: auto -->
-            <ul class="navbar-nav ms-auto">
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link" href="profile.html" id="profileButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Profile
-                </a>
-              </li> -->
-              <li class="nav-item">
-                <a id="profileButton" href="profile.html" class="nav-link">Profile</a>
-              </li>
-              <li class="nav-item">
-                <a id="logoutButton" href="#" class="nav-link">Logout</a>
-              </li>
-              <li class="nav-item">
-                <a id="loginButton" href="/login.html" class="nav-link">Login</a>
-              </li>
-              <li>
-                <div class="btn-nav">
-                  <a id="registerButton" class="btn text-bg-dark btn-small navbar-btn" href="/register.html"
-                    >Register</a
-                  >
-                </div>
-              </li>
-            </ul>
+          <div class="logos">
+            <img src="./images/organizations.png" alt="Logo 1">
           </div>
         </div>
+      </div>
+    </section>
+    <section class="call-to-action">
+      <div class="cta-container">
+        <div class="cta-logos">
+          <img src="./images/beSanta.png" alt="Organizations Logos" />
+        </div>
+        <div class="cta-content">
+          <blockquote>
+            "Every contribution, no matter how small, bring hope and change to those in need. Be the reason
+            someone smile today--donate now and become a part of this meaningful journey"
+          </blockquote>
+          <div class="cta-buttons">
+            <button class="cta-button donate" onclick="window.location.href='organisations.html'">Donate Now</button>
+            <button class="cta-button tree" onclick="window.location.href='tree.html'">Your Tree</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-container">
+      <h2>Contact Us</h2>
+      <div class="contact-wrapper">
+        <div class="contact-form">
+          <h3>Send us a message</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <ul>
+            <li>📞 +65 1234 5678</li>
+            <li>✉️ Santa_1225@gmail.com</li>
+            <li>📍 123 Street, City, Country</li>
+          </ul>
+          <image src="./images/contribution.png" alt="Santa Claus" width="250px"></image>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 Generositree. All rights reserved.</p>
+      <nav style="background-color: #054439;">
+        <a href="#about">About Us</a> |
+        <a href="#privacy-policy">Privacy Policy</a> |
+        <a href="#terms">Terms of Service</a>
       </nav>
-  </div>
-  <!-- Hero Section -->
-  <div class="hero">
-    <div class="hero-content">
-      <div class="tree-image"></div>
-      <h1><span style="font-weight: normal;">Bring life to the Tree</span><br> <span style="font-weight: bold;">Joy to
-          the Community</span></h1>
-      <p>Join us this festive season to <strong>spread joy and kindness</strong>.<br>Your donation can
-        <strong>light up lives</strong> and make a <strong>difference</strong> in our community
-      </p>
-      <button class="cta-button" onclick="window.location.href='organisations.html'">Donate now</button>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p><span style="color: #1fb08b; font-weight: bold; font-size: 1.2rem;">Contact us:</span> Santa_1225@gmail.com |
+        +65 1234 5678</p>
     </div>
-  </div>
-  <div class="how-it-works">
-    <h4><span style="font-weight: bold;">Generositree</span> is fun, easy, and trusted</h4>
-    <p>You can discover trusted organizations and make giving simple, all in one place</p>
+  </footer>
 
-    <div class="flex-list">
-      <div class="list-item">
-        <div class="icon"><img src="./images/one.png" alt="one" width="50px"></div>
-        <h5>Explore our partnered Organizations</h5>
-        <p>Browse list of Non-profits, Charities, and NGOs in Singapore.</p>
-      </div>
-      <div class="list-item">
-        <div class="icon"><img src="./images/two.png" alt="two" width="50px"></div>
-        <h5>Choose a Cause</h5>
-        <p>Select an organization you would like to support.</p>
-      </div>
-      <div class="list-item">
-        <div class="icon"><img src="./images/three.png" alt="three" width="50px"></div>
-        <h5>Donate Easily</h5>
-        <p>Enter your donation amount and payment details securely.</p>
-      </div>
-      <div class="list-item">
-        <div class="icon"><img src="./images/four.png" alt="four" width="50px"></div>
-        <h5>Make a Difference</h5>
-        <p>Watch your contributions grow the Christmas tree.</p>
-      </div>
-    </div>
-  </div>
-  <div class="organizations-section">
-    <div class="container">
-      <div class="organizations-row">
-        <div class="description">
-          <p>
-            "There are countless changemakers in Singapore—groups dedicated to creating a better future for
-            our communities.
-            Our team aims to build a bridge between individuals and these impactful initiatives, enabling
-            everyone to contribute
-            to society in a more meaningful and efficient way. Together, we make generosity simple,
-            effective, and inspiring."
-          </p>
-          <button onclick="window.location.href='organisations.html'">Explore all organizations</button>
-        </div>
-        <div class="logos">
-          <img src="./images/organizations.png" alt="Logo 1">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="call-to-action">
-    <div class="cta-container">
-      <div class="cta-logos">
-        <img src="./images/beSanta.png" alt="Organizations Logos" />
-      </div>
-      <div class="cta-content">
-        <blockquote>
-          "Every contribution, no matter how small, bring hope and change to those in need. Be the reason
-          someone smile today--donate now and become a part of this meaningful journey"
-        </blockquote>
-        <div class="cta-buttons">
-          <button class="cta-button donate" onclick="window.location.href='organisations.html'">Donate Now</button>
-          <button class="cta-button tree" onclick="window.location.href='tree.html'">Your Tree</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="contact-container">
-    <h2>Contact Us</h2>
-    <div class="contact-wrapper">
-      <div class="contact-form">
-        <h3>Send us a message</h3>
-        <form>
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-      <div class="contact-info">
-        <h3>Contact Information</h3>
-        <ul>
-          <li>📞 +65 1234 5678</li>
-          <li>✉️ Santa_1225@gmail.com</li>
-          <li>📍 123 Street, City, Country</li>
-        </ul>
-        <image src="./images/contribution.png" alt="Santa Claus" width="250px"></image>
-      </div>
-    </div>
-    <footer>
-      <div class="footer-container">
-        <p>&copy; 2024 Generositree. All rights reserved.</p>
-        <nav style="background-color: #054439;">
-          <a href="#about">About Us</a> |
-          <a href="#privacy-policy">Privacy Policy</a> |
-          <a href="#terms">Terms of Service</a>
-        </nav>
-        <div class="social-links">
-          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
-        <p><span style="color: #1fb08b; font-weight: bold; font-size: 1.2rem;">Contact us:</span> Santa_1225@gmail.com |
-          +65 1234 5678</p>
-      </div>
-    </footer>
-    <script>
-      const button = document.querySelector('.cta-button');
-      const treeImage = document.querySelector('.tree-image');
-
-      button.addEventListener('mouseover', () => {
-        treeImage.style.backgroundImage = "url('./images/glowing_tree1.png')";
-      });
-
-      button.addEventListener('mouseout', () => {
-        treeImage.style.backgroundImage = "url('./images/normal_tree1.png')";
-      });
-    </script>
-
-    <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  <script src="js/fetch_navbar.js" type="text/javascript"></script>
+  <script src="js/hero_donate_btn.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"
-    ></script>
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-    crossorigin="anonymous"
-    ></script>
-    <script src="js/queryCmds.js" type="text/javascript"></script>
-    <script src="js/getCurrentURL.js" type="text/javascript"></script>
-    <script src="js/userNavbarToggle.js" type="text/javascript"></script>
+    crossorigin="anonymous"></script>
+  <script src="js/queryCmds.js" type="text/javascript"></script>
+  <script src="js/getCurrentURL.js" type="text/javascript"></script>
+  <script src="js/userNavbarToggle.js" type="text/javascript"></script>
 </body>
 
 </html>

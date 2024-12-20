@@ -1,6 +1,6 @@
 nav {
-    background-color: #054439; 
-} 
+    background-color: #054439;
+}
 
 .navbar a {
     color: white
@@ -10,6 +10,14 @@ nav {
     max-height: 40px;
 }
 
-.navbar a:hover { /* so that it remains white even when its hovered over */
+.navbar a:hover {
+    /* so that it remains white even when its hovered over */
     color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: cyan;
+}
+
+.navbar .nav-link.active {
+    color: cyan;
 }

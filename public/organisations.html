@@ -1,84 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Organisations</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
 
     <!-- stylesheets -->
     <link href="./css/nav.css" rel="stylesheet" />
     <link href="./css/organisations.css" rel="stylesheet" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
     <!--- navigation bar -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="./images/santa-claus.png" 
-            class="logo img-fluid"/>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <!-- these are the links that will be displayed on the right hand side of the navbar -->
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a id='organisations-link' class="nav-link" href="organisations.html">Donate</a>
-            </li>
-            <li class="nav-item">
-              <a id='tree-link' class="nav-link" href="tree.html">Tree</a>
-            </li>
-          </ul>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <!-- ms-auto: margin-left: auto -->
-          <ul class="navbar-nav ms-auto">
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link" href="profile.html" id="profileButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Profile
-              </a>
-            </li> -->
-            <li class="nav-item">
-              <a id="profileButton" href="profile.html" class="nav-link">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a id="logoutButton" href="#" class="nav-link">Logout</a>
-            </li>
-            <li class="nav-item">
-              <a id="loginButton" href="/login.html" class="nav-link">Login</a>
-            </li>
-            <li>
-              <div class="btn-nav">
-                <a id="registerButton" class="btn text-bg-dark btn-small navbar-btn" href="/register.html"
-                  >Register</a
-                >
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar"></div>
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -107,13 +48,16 @@
                 <div class="col-md-6">
                     <h2 class="display-3 fw-bolder">Our Mission</h2>
                     <p class="lead py-4">
-                        Welcome to <strong>Generositree</strong>, a platform built to spread the joy and spirit of Christmas by connecting people with trusted charity organizations. 
-                        Instead of operating as a standalone charity, <strong>Generositree</strong> aims to serve as a bridge — a one-stop platform where users can explore a variety 
+                        Welcome to <strong>Generositree</strong>, a platform built to spread the joy and spirit of
+                        Christmas by connecting people with trusted charity organizations.
+                        Instead of operating as a standalone charity, <strong>Generositree</strong> aims to serve as a
+                        bridge — a one-stop platform where users can explore a variety
                         of Christmas charity initiatives and choose to donate to causes close to their hearts.
                     </p>
                     <p class="lead">
-                        Our goal is to promote the true essence of Christmas: kindness, compassion, and generosity. 
-                        By supporting these charities, we hope to raise awareness for meaningful causes and encourage everyone 
+                        Our goal is to promote the true essence of Christmas: kindness, compassion, and generosity.
+                        By supporting these charities, we hope to raise awareness for meaningful causes and encourage
+                        everyone
                         to play a part in making this festive season brighter for those in need.
                     </p>
                 </div>
@@ -127,7 +71,8 @@
         <div class="container">
             <h2 class="text-center text-white mb-4 display-5 fw-bolder">Our Trusted Christmas Charity Organizations</h2>
             <p class="text-center text-white mb-5">
-                At <strong>Generositree</strong>, we are proud to partner with some of the most trusted Christmas charity
+                At <strong>Generositree</strong>, we are proud to partner with some of the most trusted Christmas
+                charity
                 organizations. Together, we aim to spread joy and make a meaningful difference this festive season by
                 supporting those in need. Below are some of our partners and their inspiring missions.
             </p>
@@ -159,7 +104,8 @@
                             <h5 class="card-title">Feeding Hope</h5>
                             <p class="card-text">
                                 Providing warm Christmas meals to homeless individuals and families in need. Every meal
-                                served carries a message of love, hope, and compassion for those facing hardship during the
+                                served carries a message of love, hope, and compassion for those facing hardship during
+                                the
                                 holidays.
                             </p>
                             <p class="text-muted">
@@ -255,7 +201,8 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Reindeer Rescue</h5>
                             <p class="card-text">
-                                Protecting Arctic wildlife and supporting indigenous communities. Reindeer Rescue works to
+                                Protecting Arctic wildlife and supporting indigenous communities. Reindeer Rescue works
+                                to
                                 safeguard the delicate ecosystem of the Arctic while preserving traditions.
                             </p>
                             <p class="text-muted">
@@ -273,7 +220,8 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Peaceful Pines</h5>
                             <p class="card-text">
-                                Planting Christmas trees to combat deforestation and promote sustainability. Peaceful Pines
+                                Planting Christmas trees to combat deforestation and promote sustainability. Peaceful
+                                Pines
                                 inspires communities to give back to the environment during the holidays.
                             </p>
                             <p class="text-muted">
@@ -287,7 +235,8 @@
             </div>
             <!-- Some Disclaimer -->
             <p class="text-center text-white-50 mt-4">
-                Note: The organizations, descriptions, and images displayed here are made up for demonstration purposes, and
+                Note: The organizations, descriptions, and images displayed here are made up for demonstration purposes,
+                and
                 the images are AI-generated.
             </p>
         </div>
@@ -299,7 +248,8 @@
         <div class="container">
             <h2 class="text-center mb-4 display-5 fw-bolder">Frequently Asked Questions</h2>
             <p class="text-center mb-5">
-                Here are some common questions about <strong>Generositree</strong>. If you have more queries, feel free to
+                Here are some common questions about <strong>Generositree</strong>. If you have more queries, feel free
+                to
                 reach out to us!
             </p>
 
@@ -334,7 +284,8 @@
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
                             Simply browse through our list of organizations and click on the "Donate Now" button for the
-                            cause you wish to support. You will be redirected to the organization’s official donation page
+                            cause you wish to support. You will be redirected to the organization’s official donation
+                            page
                             to complete your contribution.
                         </div>
                     </div>
@@ -351,7 +302,8 @@
                     <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            All organizations featured on Generositree are thoroughly vetted to ensure they are reputable
+                            All organizations featured on Generositree are thoroughly vetted to ensure they are
+                            reputable
                             and trustworthy. We aim to provide users with a reliable list of charities making a real
                             difference during the Christmas season.
                         </div>
@@ -369,7 +321,8 @@
                     <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4"
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Yes! We welcome suggestions for new organizations to include on Generositree. Please contact us
+                            Yes! We welcome suggestions for new organizations to include on Generositree. Please contact
+                            us
                             with details about the organization, and our team will review your recommendation.
                         </div>
                     </div>
@@ -388,14 +341,15 @@
                         <div class="accordion-body">
                             Generositree does not handle any donations directly. All donations are made via the official
                             websites of the featured organizations, ensuring complete transparency. This way, you can be
-                            confident that your contributions are reaching the intended cause without any intermediaries.
+                            confident that your contributions are reaching the intended cause without any
+                            intermediaries.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-  
+
     <!-- Footer Section -->
     <footer>
         <div class="footer-container">
@@ -410,11 +364,12 @@
                 <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-            <p><span style="color: #1fb08b; font-weight: bold; font-size: 1.2rem;">Contact us:</span> Santa_1225@gmail.com |
+            <p><span style="color: #1fb08b; font-weight: bold; font-size: 1.2rem;">Contact us:</span>
+                Santa_1225@gmail.com |
                 +65 1234 5678</p>
         </div>
     </footer>
-  
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -422,8 +377,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
         crossorigin="anonymous"></script>
+    <script src="js/fetch_navbar.js" type="text/javascript"></script>
     <script src="js/queryCmds.js" type="text/javascript"></script>
     <script src="js/getCurrentURL.js" type="text/javascript"></script>
     <script src="js/userNavbarToggle.js" type="text/javascript"></script>
-    </body>
+</body>
+
 </html>
