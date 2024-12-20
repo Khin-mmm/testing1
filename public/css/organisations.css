@@ -1,0 +1,140 @@
+/* Hero Section Styles */
+.hero-section {
+    position: relative; /* Ensures the pseudo-element is positioned relative to the section */
+    background: url('../images/santa-banner.jpg') center 20%;
+    background-size: cover;
+    height: 480px;
+    text-align: center;
+    color: white;
+    overflow: hidden; /* Ensures content does not overflow */
+  }
+  
+  /* Dark Overlay */
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: 1; /* Ensures the overlay is behind the text */
+  }
+  
+  /* Ensure Text is Above Overlay */
+  .hero-section .container {
+    position: relative;
+    z-index: 2; /* Places the text above the overlay */
+  }
+  
+  /* Text Shadow for Readability */
+  .text-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .bg-grey {
+      background-color: #f0f4f6;
+  }
+  
+  .bg-red {
+      background-color: #b82c2c;
+  }
+  
+  /* Card styles  */
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    outline: 4px solid rgb(15, 238, 90);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Make the shadow more prominent */
+  }
+  
+  .card-title {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left; /* Makes the text left-aligned */
+  }
+  
+  .text-muted{
+    text-align: left; /* Makes the text left-aligned */
+  }
+  
+  /* Button styles */
+  .btn-custom {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-weight: bold; /* Bold text */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding for size */
+    border: none; /* Remove border */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    width: 100%; /*  button width  */
+  }
+  
+  /* Hover effect */
+  .btn-custom:hover {
+    background-color: #333; /* Darker shade on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  /* Active state */
+  .btn-custom:active {
+    transform: translateY(0); /* Reset lift effect */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduce shadow */
+  }
+  
+  .accordion-button {
+    font-weight: bold;
+    color: #333;
+    background-color: #f8f9fa; /* Light grey background */
+  }
+  
+  .accordion-button:hover {
+    background-color: #ddd; /* Slightly darker on hover */
+  }
+  
+  .accordion-body {
+    background-color: #fff;
+    color: #555;
+  }
+  
+  /* For footer Session */
+  footer {
+      background-color: #054439;
+      color: #fff;
+      padding: 20px 0px;
+      text-align: center;
+  }
+  
+  i {
+      margin: 15px 15px;
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+  }
+  
+  i:hover {
+      color: #1fb08b;
+      /* Hover color */
+  }
+  
+  .footer-container nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 5px;
+  }
+  
+  .footer-container nav a:hover {
+      text-decoration: underline;
+  }

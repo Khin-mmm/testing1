@@ -43,7 +43,7 @@ Before running the application, ensure that the following dependencies are insta
 
 ## Run the application
 1. Initialise the MySQL database by using the `npm run init_tables` script defined in the `package.json` file
-2. Depending on your needs, you can either use `npm start` or `npm run dev` to start up the server. `npm run dev` comes with the added advantage of automatic restarts which is particularly useful during development.
+2. Depending on your needs, you can either use `npm start` or `npm run dev` to start up the server. `npm run dev` comes with the added advantage of automatic restarts which is particularly useful during development. Note: navigate to localhost:3000 on your preferred web browser to view the website!
 
 ## Install Dependencies
 1. Open the terminal in Visual Studio Code by going to `View` > `Terminal` or using the shortcut `Ctrl + ``.
